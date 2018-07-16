@@ -3,7 +3,7 @@ import requests
 import re
 
 
-df = pd.read_csv('tactic.csv') #Read Triplelift Tactic Mapping in CSV Format into Pandas Dataframe object
+df = pd.read_csv('data/input/tactic.csv') #Read Triplelift Tactic Mapping in CSV Format into Pandas Dataframe object
 
 active_bool = df['active'] == 1 #Select only Active Tactics
 not_deleted_bool = df['deleted'] == 0 #Select Tactics that have not been deleted
@@ -56,5 +56,5 @@ impression_pixel_results_data = { 'tactic': impression_pixel_tactics,
 								'http_response': impression_http_responses
 								}
 impression_pixel_status_results = pd.DataFrame(impression_pixel_results_data, columns = ['tactic', 'url', 'http_response'])
-impression_pixel_status_results.to_csv('impression_pixel_status-v2.csv', sep=',') #write http results to csv file
+impression_pixel_status_results.to_csv('output/impression_pixel_status-v2.csv', sep=',') #write http results to csv file
 
