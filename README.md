@@ -17,7 +17,7 @@ pip install pandas
 python tactic-impression-pixel.py
 ```
 
-```sh
-# Input file must be stored in data/input
-# Output file will be written to data/output
-```
+
+Input file must be stored in data/input
+
+Output file will be written to data/output
