@@ -1,0 +1,1 @@
+pd2 = pd.DataFrame([[12187,333304]], columns = ['id','tactic_id'])
